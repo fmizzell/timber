@@ -32,6 +32,10 @@ class Node {
     return empty($this->children);
   }
 
+  public function getChildren() {
+    return $this->children;
+  }
+
   public function __toString() {
     $string_array = [];
     $string_array[] = "(";
@@ -41,9 +45,5 @@ class Node {
     }
     $string_array[] = ")";
     return implode("", $string_array);
-  }
-
-  public function getChildren() {
-    return $this->children;
   }
 }
