@@ -18,8 +18,19 @@ class NodeTest extends \PHPUnit\Framework\TestCase {
 
     $string = "{$tree}";
 
+    $this->assertEquals("0", $tree->getValue());
+
+    $this->assertFalse($tree->searchChildren(11));
+
+    $child = $tree->searchChildren(2);
+    $this->assertEquals($child2, $child);
+
+    $this->assertEquals([$grandchild11, $grandchild12], $child1->getChildren());
+
+    $this->assertFalse($child1->isLeaf());
+
+    $this->assertTrue($child2->isLeaf());
+
     $this->assertEquals("(0(1(11)(12))(2))", $string);
-
-
   }
 }
