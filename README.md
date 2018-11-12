@@ -4,4 +4,4 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/af50d7eab656206764b4/test_coverage)](https://codeclimate.com/github/fmizzell/timber/test_coverage)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-A simple tree datastructure
+A simple tree datastructure.
